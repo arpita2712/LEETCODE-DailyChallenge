@@ -33,7 +33,7 @@ All the integers in each column are sorted in ascending order.
 
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
-        int row = 0, col = matrix[0].length - 1;
+        int row = 0, col = matrix[0].length - 1;    //column is assigned the last value of the first row.
         while(row<matrix.length && col>=0){
             if(matrix[row][col] == target)
                 return true;
